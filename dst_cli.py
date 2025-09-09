@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # pip install denstatbank pandas matplotlib
+# python dst_cli.py
 
 from denstatbank import StatBankClient
 import pandas as pd
