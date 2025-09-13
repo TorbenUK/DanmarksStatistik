@@ -1,4 +1,4 @@
-Python scripts der kan hente tal fra tabeller i Statistikbanken.
+Python scripts der henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken. 
 
 Befolkning (folk1am.py)  
 Forventninger (forv1.py)  
