@@ -1,6 +1,7 @@
 Python scripts der kan hente tal fra tabeller i Statistikbanken.
 
-folk1am.py    Befolkning  
+Befolkning (folk1am.py)  
+
 forv1.py      Forventninger  
 pris4321p.py  Producentprisindkset  
 pris4321i.py  Importprisindekset  
