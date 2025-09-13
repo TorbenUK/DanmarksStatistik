@@ -1,1 +1,1 @@
-Dette python script kan læse læse fra Danmarks Statistik.
+Python scripts der kan hente tal fra tabeller i Statistikbanken.
