@@ -1,8 +1,8 @@
 Python scripts der kan hente tal fra tabeller i Statistikbanken.
 
 First time:
-  pip install denstatbank
-  python3 -m venv .venv
+pip install denstatbank
+python3 -m venv .venv
 
 Every time:
 
