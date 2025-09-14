@@ -20,30 +20,3 @@ python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip 
 **Kørsel:**
 ```bash
 cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py  ```
-
-
-
-**Eller via venv + requirements.txt:**
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install --upgrade pip setuptools wheel
-pip install -r requirements.txt
-```
-
-
-
-
-FIRST TIME:  
-pip install denstatbank pandas 
-
-
-SECOND TIME:  
-source .venv/bin/activate  
-python3 folk1am.py && python3 forv1.py && python3 pris4321.py && python3 pris111.py
-
-ONE-LINE:  
-cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py  
-
-
