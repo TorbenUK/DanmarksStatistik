@@ -1,30 +1,26 @@
-# AktieDiagnosen – README
+# DanmarksStatistik – README
 
-Et Python-script, der henter nordiske aktier fra NASDAQ Nordic, beregner indikatorer (momentum, RS, volumener m.m.), og genererer både PDF‐sider (A4 landscape) samt XLSX-filer. Kan sende PDF’er på mail.
-
-## Krav
-- **Python 3.9+** (pga. `zoneinfo`); anbefalet 3.10+
-- Internetadgang (henter data fra NASDAQ & Yahoo Finance)
-
-## Installation
-
-**Én linje (pip):**
-```bash
-pip install --upgrade pip setuptools wheel && pip install pandas numpy requests yfinance matplotlib pypdf python-dotenv xlsxwriter
-```
-
-
-
-
-Python scripts der henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken. 
-
-Dette er en test!!!
+Et Python-script, der henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken.  
+Python-script henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken. 
 
 Befolkning (folk1am.py)  
 Forbrugerforventninger (forv1.py)  
 Producentprisindekset (pris4321p.py)  
 Importprisindekset (pris4321i.py)  
 Forbrugerprisindekset (pris111.py)  
+
+
+## Installation
+
+**Én linje (pip):**
+```bash
+pip install --upgrade pip denstatbank pandas 
+```
+
+
+
+
+
 
 FIRST TIME:  
 pip install denstatbank pandas 
