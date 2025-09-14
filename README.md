@@ -2,8 +2,6 @@
 
 Et Python-script, der henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken.  
 
-SKAL SLETTES DENNE LINJE
-
 Følgende tabller kan hentes:
 
 Befolkning (folk1am.py)  
