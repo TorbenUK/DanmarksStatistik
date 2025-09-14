@@ -12,13 +12,17 @@ Forbrugerprisindekset (pris111.py)
 
 ## Installation
 
-**Oprettelse via virtuelt miljø:**
+**Oprettelse af virtuelt miljø samt installation af pakker:**
 ```zsh
-python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && python3 folk1am.py && python3 forv1.py && python3 pris4321.py && python3 pris111.py
+python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && deactivate
 ```
 
-**Kørsel:**
+**Kørsel fra terminal:**
 ```zsh
-cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py
+cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && deactivate
 ```
 
+**Kørsel fra folder:**
+```zsh
+source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && deactivate
+```
