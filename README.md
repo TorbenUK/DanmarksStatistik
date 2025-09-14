@@ -1,5 +1,7 @@
 Python scripts der henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken. 
 
+Dette er en test!!!
+
 Befolkning (folk1am.py)  
 Forbrugerforventninger (forv1.py)  
 Producentprisindekset (pris4321p.py)  

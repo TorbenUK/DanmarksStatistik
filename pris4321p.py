@@ -78,29 +78,26 @@ times_from_2024 = [t for t in all_times if re.match(r'^\d{4}M\d{2}$', t) and t >
 if not times_from_2024:
     raise RuntimeError("Ingen måneds-koder >= 2024M01 i tabellen.")
 
-# 4) Vælg ENHED efter UNIT_MODE
+## 4) ENHED efter UNIT_MODE
 if UNIT_MODE.lower() == "pct":
-    # “Ændring i forhold til samme måned året før (pct.)”
-    enhed_row = meta[
+    # Præcist dansk match (uden regex=)
+    exact = meta[
         (meta['variable'] == VN_ENHED) &
-        (meta['text'].str.contains(r"ændring.*samme måned.*året før.*pct", case=False, regex=True) |
-         meta['text'].str.contains(r"(y\s*/\s*y|yoy|change.*same month.*previous year)", case=False, regex=True))
+        (meta['text'].str.fullmatch(r"\s*Ændring i forhold til samme måned året før\s*\(pct\.\)\s*", case=False))
     ]
+    if not exact.empty:
+        enhed_row = exact
+    else:
+        # Fallback: robust regex (dansk/engelsk nøgleord)
+        enhed_row = meta[
+            (meta['variable'] == VN_ENHED) &
+            (
+                meta['text'].str.contains(r"ændring\s*i\s*forhold\s*til\s*samme\s*måned\s*året\s*før.*pct", case=False, regex=True) |
+                meta['text'].str.contains(r"(y\s*/\s*y|yoy|change\s*.*same\s*month.*previous\s*year)", case=False, regex=True)
+            )
+        ]
     if enhed_row.empty:
         raise RuntimeError("Kunne ikke finde enhed 'Ændring i forhold til samme måned året før (pct.)'.")
-    enhed_id = enhed_row['id'].iloc[0]
-else:
-    # “Indeks (2021=100)” som fallback/alternativ
-    enhed_row = meta[
-        (meta['variable'] == VN_ENHED) &
-        (meta['text'].str.contains(r"\bindeks\b", case=False, regex=True))
-    ]
-    if enhed_row.empty:
-        # sidste desperationsforsøg: ID'er som 100/200/300
-        enhed_row = meta[(meta['variable']==VN_ENHED) & (meta['id'].isin(["100","200","300"]))]
-    if enhed_row.empty:
-        # allersidste fallback: første værdi
-        enhed_row = meta[meta['variable'] == VN_ENHED].head(1)
     enhed_id = enhed_row['id'].iloc[0]
 
 # 5) Marked = 'Samlet' (eller 'Total' som alternativ)
