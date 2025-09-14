@@ -14,11 +14,7 @@ Forbrugerprisindekset (pris111.py)
 
 **Oprettelse via virtuelt miljø:**
 ```zsh
-python3 -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install --upgrade pip setuptools wheel
-pip install -r requirements.txt
+python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && python3 folk1am.py && python3 forv1.py && python3 pris4321.py && python3 pris111.py
 ```
 
 
