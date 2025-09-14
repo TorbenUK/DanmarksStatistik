@@ -12,19 +12,37 @@ Forbrugerprisindekset (pris111.py)
 
 ## Installation
 
+**Oprettelse via virtuelt miljø:**
+```zsh
+python3 -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
+
+
+
 **Én linje (pip):**
 ```bash
 pip install --upgrade pip denstatbank pandas 
 ```
 
-
+**Eller via venv + requirements.txt:**
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
 
 
 
 
 FIRST TIME:  
 pip install denstatbank pandas 
-python3 -m venv .venv
+
 
 SECOND TIME:  
 source .venv/bin/activate  
