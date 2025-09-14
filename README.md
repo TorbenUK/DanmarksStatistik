@@ -7,7 +7,7 @@ Importprisindekset (pris4321i.py)
 Forbrugerprisindekset (pris111.py)  
 
 FIRST TIME:  
-pip install denstatbank  
+pip install denstatbank pandas
 python3 -m venv .venv
 
 SECOND TIME:  
