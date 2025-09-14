@@ -1,14 +1,13 @@
 # DanmarksStatistik – README
 
 Et Python-script, der henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken.  
-Python-script henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken. 
+Følgende tabller kan hentes:
 
 Befolkning (folk1am.py)  
 Forbrugerforventninger (forv1.py)  
 Producentprisindekset (pris4321p.py)  
 Importprisindekset (pris4321i.py)  
 Forbrugerprisindekset (pris111.py)  
-
 
 ## Installation
 
