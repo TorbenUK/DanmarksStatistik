@@ -19,7 +19,7 @@ python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip 
 
 **Kørsel fra terminal:**
 ```zsh
-cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && deactivate
+cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && deactivate && cd /
 ```
 
 **Kørsel fra folder:**
