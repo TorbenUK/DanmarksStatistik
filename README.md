@@ -17,7 +17,7 @@ Forbrugerprisindekset (pris111.py)
 cd Documents/python/DanmarksStatistik && python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && deactivate
 ```
 
-## R un python scripts
+## Run python scripts
 
 **Run from terminal:**
 ```zsh
