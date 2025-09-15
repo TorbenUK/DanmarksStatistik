@@ -1,8 +1,8 @@
 # DanmarksStatistik – README
 
-Et Python-script, der henter følgende tal fra 01/2024 og frem fra tabeller i Statistikbanken.  
+A Python script that retrieves the following figures from 01/2024 and onwards from tables in Statistics Denmark’s StatBank.  
 
-Følgende tabller kan hentes:
+The following tables can be retrieved:
 
 Befolkning (folk1am.py)  
 Forbrugerforventninger (forv1.py)  
@@ -17,12 +17,14 @@ Forbrugerprisindekset (pris111.py)
 python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && deactivate
 ```
 
-**Kørsel fra terminal:**
+## Run python scripts
+
+**Run from terminal:**
 ```zsh
 cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && deactivate && cd /
 ```
 
-**Kørsel fra folder:**
+**Run from folder:**
 ```zsh
 source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && deactivate
 ```
