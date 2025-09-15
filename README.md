@@ -12,7 +12,7 @@ Forbrugerprisindekset (pris111.py)
 
 ## Installation
 
-**Oprettelse af virtuelt miljø samt installation af pakker:**
+**Creating a virtual environment and installing packages:**
 ```zsh
 python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && deactivate
 ```
