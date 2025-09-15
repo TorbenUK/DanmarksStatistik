@@ -1,5 +1,7 @@
 # DanmarksStatistik – README
 
+skal slettes
+
 A Python script that retrieves the following figures from 01/2024 and onwards from tables in Statistics Denmark’s StatBank.  
 
 The following tables can be retrieved:
