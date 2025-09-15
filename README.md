@@ -14,10 +14,10 @@ Forbrugerprisindekset (pris111.py)
 
 **Creating a virtual environment and installing packages:**
 ```zsh
-python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && deactivate
+cd Documents/python/DanmarksStatistik && python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip denstatbank pandas && deactivate
 ```
 
-## Run python scripts
+## R un python scripts
 
 **Run from terminal:**
 ```zsh
