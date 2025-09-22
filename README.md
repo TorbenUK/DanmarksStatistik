@@ -21,10 +21,10 @@ cd Documents/python/DanmarksStatistik && python3 -m venv .venv && source .venv/b
 
 **Run from terminal:**
 ```zsh
-cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && lbesk04.py && deactivate && cd ../../../
+cd Documents/python/DanmarksStatistik && source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && python3 lbesk04.py && deactivate && cd ../../../
 ```
 
 **Run from folder:**
 ```zsh
-source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && deactivate
+source .venv/bin/activate && python3 folk1am.py && python3 forv1.py && python3 pris4321p.py && python3 pris4321i.py && python3 pris111.py && python3 lbesk04.py && deactivate
 ```
