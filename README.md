@@ -8,7 +8,8 @@ Befolkning (folk1am.py)
 Forbrugerforventninger (forv1.py)  
 Producentprisindekset (pris4321p.py)  
 Importprisindekset (pris4321i.py)  
-Forbrugerprisindekset (pris111.py)  
+Forbrugerprisindekset (pris111.py) 
+Beskæftigelse (lbesk04.py)
 
 ## Installation
 
